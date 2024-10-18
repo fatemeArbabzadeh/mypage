@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Plan</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-method">
+          <h3>Select Payment Method</h3>
+          <div class="payment-options">
+            <div class="option active">
+              <input type="radio" id="credit-card" name="payment" checked />
+              <label for="credit-card">
+                <i class="fas fa-credit-card"></i>
+                Credit Card
+              </label>
+            </div>
+            
+          </div>
+      
+          <div class="payment-form">
+            <label for="name-on-card">Name on Card</label>
+            <input type="text" id="name-on-card" placeholder="Name on card" />
+      
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" placeholder="•••• •••• •••• ••••" />
+      
+            <div class="card-details">
+              <div>
+                <label for="month">Month</label>
+                <select id="month">
+                  <option>Select Month</option>
+                  <option>01</option>
+                  <option>02</option>
+                  
+                </select>
+              </div>
+              <div>
+                <label for="year">Year</label>
+                <select id="year">
+                  <option>Select Year</option>
+                  <option>2024</option>
+                  <option>2025</option>
+                  
+                </select>
+              </div>
+              <div>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="•••" />
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <ul>
+            <li><i class="fas fa-check"></i>  Description : </li> <br>
+            <li><i class="fas fa-check"></i> ✔ This plan includes to our fitness tracker features that will help you achieve your fitness goals</li><br>
+            <li><i class="fas fa-check"></i> ✔ Enjoy tracking your daily activities, monitoring your sleep,and analyzing your progress</li><br>
+            <li><i class="fas fa-check"></i> ✔ By choosing any of the plans, you will have access to tools and resources</li>
+          </ul> <br>
+          <div class="date-time">
+            <p>Wednesday</p>
+            <p>January 18, 2017 | 11:00 AM</p>
+          </div>
+          <button class="purchase-btn">Purchase Now</button>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+    <script src="price.js"></script>
+</body>
+</html>

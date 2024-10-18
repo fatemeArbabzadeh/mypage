@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&family=Protest+Guerrilla&display=swap");
+
+body {
+    font-family: "poppins", system-ui;
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+}
+  
+.payment-method, .order-summary {
+    width: 95%;
+    background-image: url(image_2024-08-16_20-45-51.png);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.payment-method h3, .order-summary h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+  
+.payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+  
+.option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+.option.active, .option:hover {
+    background-color: purple;
+}
+  
+.option input {
+    display: none;
+}
+  
+.option i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+  
+.payment-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+  
+.payment-form input, .payment-form select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.card-details div {
+    width: 30%;
+}
+  
+.order-summary .product {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+  
+.order-summary ul {
+    list-style: none;
+    padding-left: 0;
+}
+  
+.order-summary ul li {
+    margin-bottom: 5px;
+}
+  
+.order-summary ul li i {
+    color: green;
+    margin-right: 5px;
+}
+  
+.date-time {
+    margin-top: 15px;
+    font-size: 14px;
+}
+  
+.purchase-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: purple;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.purchase-btn:hover {
+    background-color: green;
+}
+
+
+@media (max-width: 768px) {
+    .payment-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-method, .order-summary {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .card-details {
+        flex-direction: column;
+    }
+
+    .card-details div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .payment-options {
+        flex-direction: column;
+    }
+
+    .option {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .payment-method h3, .order-summary h3 {
+        font-size: 16px;
+    }
+
+    .purchase-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
